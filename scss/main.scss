@@ -1,0 +1,149 @@
+@import "variables", "reset", "mixins";
+////////////////
+body {
+  width: 100%;
+  background-color: $neutralColor2;
+}
+///////////////
+.main-section {
+  width: 90%;
+  max-width: 100rem;
+  margin: 2rem auto;
+  background-color: $neutralColor1;
+  .main-header {
+    width: 90%;
+    max-width: 100rem;
+    margin: 1rem auto;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    .notifications {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .heading {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: $neutralColor7;
+      }
+      .notifications-number {
+        color: $neutralColor1;
+        background-color: $primaryColor2;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        margin-left: 1.5rem;
+      }
+    }
+    .mark-as-read-button {
+      border: none;
+      background-color: $neutralColor1;
+      font-size: 1.6rem;
+      color: $neutralColor5;
+      font-weight: bold;
+      &:hover {
+        cursor: pointer;
+        color: $primaryColor2;
+      }
+    }
+  }
+  .message {
+    width: 90%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .portret {
+      margin: 1rem;
+      width: 4rem;
+      height: 4rem;
+    }
+    .notification-type {
+      .message-text {
+        font-size: clamp(1.5rem, 2vw, 2rem);
+        color: $neutralColor5;
+        b {
+          color: $neutralColor7;
+          &:hover {
+            cursor: pointer;
+            color: $primaryColor2;
+          }
+        }
+        strong {
+          color: $neutralColor6;
+          &:hover {
+            cursor: pointer;
+            color: $primaryColor2;
+          }
+        }
+      }
+      .time-from-given-message {
+        color: $neutralColor5;
+        font-size: 2rem;
+      }
+    }
+  }
+  .active-notification {
+    background-color: $neutralColor3;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    .red-dot {
+    }
+  }
+  .private-message {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .person-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-left: 0;
+      .portret {
+      }
+    }
+    .the-message {
+      margin: 2rem 2rem 2rem auto;
+      border: 0.1rem solid $neutralColor4;
+      border-radius: 0.5rem;
+      color: $neutralColor5;
+      font-size: clamp(1.5rem, 2vw, 2rem);
+      width: 91%;
+      padding: 1rem;
+      &:hover {
+        cursor: pointer;
+        border: none;
+        background: $neutralColor3;
+      }
+    }
+  }
+  .picture-comment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .container {
+      display: flex;
+      flex-direction: row;
+    }
+    .picture {
+      margin-right: 2rem;
+      &:hover {
+        cursor: pointer;
+        border: 0.2rem solid $neutralColor4;
+        border-radius: 1rem;
+      }
+    }
+  }
+}
+.attribution {
+  text-align: center;
+  margin: 10rem auto;
+  font-size: $fontSize;
+  a {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,800;1,500;1,800&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 10px;
+}
+
+body {
+  width: 100%;
+  background-color: hsl(210deg, 60%, 98%);
+}
+
+.main-section {
+  width: 90%;
+  max-width: 100rem;
+  margin: 2rem auto;
+  background-color: hsl(0deg, 0%, 100%);
+}
+.main-section .main-header {
+  width: 90%;
+  max-width: 100rem;
+  margin: 1rem auto;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-section .main-header .notifications {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.main-section .main-header .notifications .heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: hsl(224deg, 21%, 14%);
+}
+.main-section .main-header .notifications .notifications-number {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(219deg, 85%, 26%);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-left: 1.5rem;
+}
+.main-section .main-header .mark-as-read-button {
+  border: none;
+  background-color: hsl(0deg, 0%, 100%);
+  font-size: 1.6rem;
+  color: hsl(219deg, 14%, 63%);
+  font-weight: bold;
+}
+.main-section .main-header .mark-as-read-button:hover {
+  cursor: pointer;
+  color: hsl(219deg, 85%, 26%);
+}
+.main-section .message {
+  width: 90%;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.main-section .message .portret {
+  margin: 1rem;
+  width: 4rem;
+  height: 4rem;
+}
+.main-section .message .notification-type .message-text {
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  color: hsl(219deg, 14%, 63%);
+}
+.main-section .message .notification-type .message-text b {
+  color: hsl(224deg, 21%, 14%);
+}
+.main-section .message .notification-type .message-text b:hover {
+  cursor: pointer;
+  color: hsl(219deg, 85%, 26%);
+}
+.main-section .message .notification-type .message-text strong {
+  color: hsl(219deg, 12%, 42%);
+}
+.main-section .message .notification-type .message-text strong:hover {
+  cursor: pointer;
+  color: hsl(219deg, 85%, 26%);
+}
+.main-section .message .notification-type .time-from-given-message {
+  color: hsl(219deg, 14%, 63%);
+  font-size: 2rem;
+}
+.main-section .active-notification {
+  background-color: hsl(211deg, 68%, 94%);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.main-section .private-message {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.main-section .private-message .person-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 0;
+}
+.main-section .private-message .the-message {
+  margin: 2rem 2rem 2rem auto;
+  border: 0.1rem solid hsl(205deg, 33%, 90%);
+  border-radius: 0.5rem;
+  color: hsl(219deg, 14%, 63%);
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  width: 91%;
+  padding: 1rem;
+}
+.main-section .private-message .the-message:hover {
+  cursor: pointer;
+  border: none;
+  background: hsl(211deg, 68%, 94%);
+}
+.main-section .picture-comment {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-section .picture-comment .container {
+  display: flex;
+  flex-direction: row;
+}
+.main-section .picture-comment .picture {
+  margin-right: 2rem;
+}
+.main-section .picture-comment .picture:hover {
+  cursor: pointer;
+  border: 0.2rem solid hsl(205deg, 33%, 90%);
+  border-radius: 1rem;
+}
+
+.attribution {
+  text-align: center;
+  margin: 10rem auto;
+  font-size: 1.6rem;
+}
+.attribution a {
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */

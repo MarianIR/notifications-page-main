@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Notifications page</title>
+    <link rel="stylesheet" href="/scss/main.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <!-- ////////////////// -->
+    <main class="main-section">
+      <!-- ////////////////// -->
+      <header class="main-header">
+        <div class="notifications">
+          <h2 class="heading">Notifications</h2>
+          <div class="notifications-number"></div>
+        </div>
+        <button class="mark-as-read-button">Mark all as read</button>
+      </header>
+      <!-- ///////////// -->
+      <div class="message active-notification">
+        <img
+          src="/notifications-page-main/assets/images/avatar-mark-webber.webp"
+          alt="mark's portret"
+          class="portret"
+          width="30"
+          height="30"
+        />
+        <div class="notification-type">
+          <p class="message-text">
+            <b>Mark Webber</b> reacted to your recent post<strong>
+              My first tournament today!</strong
+            >
+            <span class="red-dot">&#128308;</span>
+          </p>
+          <p class="time-from-given-message">1m ago</p>
+        </div>
+      </div>
+      <!-- ////////////// -->
+      <div class="message active-notification">
+        <img
+          src="/notifications-page-main/assets/images/avatar-angela-gray.webp"
+          alt="angela's portret"
+          class="portret"
+          width="30"
+          height="30"
+        />
+        <div class="notification-type">
+          <p class="message-text">
+            <b>Angela Gray</b> followed you
+            <span class="red-dot">&#128308;</span>
+          </p>
+          <p class="time-from-given-message">5m ago</p>
+        </div>
+      </div>
+      <!-- ///////////////// -->
+      <div class="message active-notification">
+        <img
+          src="/notifications-page-main/assets/images/avatar-jacob-thompson.webp"
+          alt="jacob's portret"
+          class="portret"
+          width="30"
+          height="30"
+        />
+        <div class="notification-type">
+          <p class="message-text">
+            <b>Jacob Thompson</b> has joined your group<strong>
+              Chess Club</strong
+            >
+            <span class="red-dot">&#128308;</span>
+          </p>
+          <p class="time-from-given-message">1 day ago</p>
+        </div>
+      </div>
+      <!-- //////////////// -->
+      <div class="message private-message">
+        <div class="person-container">
+          <img
+            src="/notifications-page-main/assets/images/avatar-rizky-hasanuddin.webp"
+            alt="rizky's portret"
+            class="portret"
+            width="30"
+            height="30"
+          />
+          <div class="notification-type">
+            <p class="message-text">
+              <b>Rizky Hasanuddin</b> sent you a private message
+            </p>
+            <p class="time-from-given-message">5 days ago</p>
+          </div>
+        </div>
+        <article class="the-message">
+          Hello, thanks for setting up the Chess Club. I've been a member for a
+          few weeks now and I'm already having lots of fun and improving my
+          game.
+        </article>
+      </div>
+
+      <!-- /////////////// -->
+      <div class="message picture-comment">
+        <div class="container">
+          <img
+            src="/notifications-page-main/assets/images/avatar-kimberly-smith.webp"
+            alt="kimberly's portret"
+            class="portret"
+            width="30"
+            height="30"
+          />
+          <div class="notification-type">
+            <p class="message-text">
+              <b>Kimberly Smith</b> commented on your picture
+            </p>
+            <p class="time-from-given-message">1 week ago</p>
+          </div>
+        </div>
+        <img
+          src="/notifications-page-main/assets/images/image-chess.webp"
+          alt="picture"
+          height="40"
+          width="40"
+          class="picture"
+        />
+      </div>
+      <!-- ////////////////// -->
+      <div class="message">
+        <img
+          src="/notifications-page-main/assets/images/avatar-nathan-peterson.webp"
+          alt="nathan's portret"
+          class="portret"
+          width="30"
+          height="30"
+        />
+        <div class="notification-type">
+          <p class="message-text">
+            <b>Nathan Peterson</b> reacted to your recent post<strong>
+              5 end-game strategies to increase your win rate
+            </strong>
+          </p>
+          <p class="time-from-given-message">2 weeks ago</p>
+        </div>
+      </div>
+      <!-- ///////////////// -->
+      <div class="message">
+        <img
+          src="/notifications-page-main/assets/images/avatar-anna-kim.webp"
+          alt="anna's portret"
+          class="portret"
+          width="30"
+          height="30"
+        />
+        <div class="notification-type">
+          <p class="message-text">
+            <b>Anna Kim</b> left the group<strong> Chess Club</strong>
+          </p>
+          <p class="time-from-given-message">2 weeks ago</p>
+        </div>
+      </div>
+      <!-- //////////////// -->
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://www.linkedin.com/in/marian-irinel-raileanu-1a4088206/"
+        target="_blank"
+        >Marian</a
+      >.
+    </div>
+  </body>
+</html>
